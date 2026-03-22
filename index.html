@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LensLuxe - Photography Studio</title>
+    <link rel="stylesheet" href="styles-v2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:wght@300;400;600;700&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-left">
+            <div class="logo">
+                <span class="logo-symbol">◉</span>
+                <span class="logo-text">LENSLUXE</span>
+            </div>
+        </div>
+        <div class="nav-center">
+            <a href="index-v2.html" class="nav-link active">HOME</a>
+            <a href="about-v2.html" class="nav-link">ABOUT</a>
+            <a href="services-v2.html" class="nav-link">SERVICES</a>
+            <a href="gallery-v2.html" class="nav-link">GALLERY</a>
+            <a href="contact-v2.html" class="nav-link">CONTACT</a>
+        </div>
+        <div class="nav-right">
+            <button class="theme-btn" id="themeBtn">
+                <span class="theme-icon">☀</span>
+            </button>
+            <button class="burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index-v2.html">HOME</a>
+        <a href="about-v2.html">ABOUT</a>
+        <a href="services-v2.html">SERVICES</a>
+        <a href="gallery-v2.html">GALLERY</a>
+        <a href="contact-v2.html">CONTACT</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-slider" id="heroSlider">
+            <div class="hero-slide active">
+                <img src="https://images.unsplash.com/photo-1606216794074-735e91aa2c92?w=1920&q=80" alt="Wedding">
+                <div class="slide-overlay"></div>
+            </div>
+            <div class="hero-slide">
+                <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=1920&q=80" alt="Couple">
+                <div class="slide-overlay"></div>
+            </div>
+            <div class="hero-slide">
+                <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=1920&q=80" alt="Family">
+                <div class="slide-overlay"></div>
+            </div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="hero-label">PHOTOGRAPHY STUDIO</div>
+            <h1 class="hero-title">
+                <span class="title-line">CAPTURING</span>
+                <span class="title-line title-line-large">MOMENTS</span>
+                <span class="title-line">THAT MATTER</span>
+            </h1>
+            <div class="hero-meta">
+                <span>EST. 2014</span>
+                <span class="separator">—</span>
+                <span>NEW YORK</span>
+            </div>
+            <a href="#work" class="hero-scroll">
+                <span>EXPLORE</span>
+                <div class="scroll-indicator"></div>
+            </a>
+        </div>
+
+        <div class="hero-controls">
+            <button class="slide-btn slide-prev" id="slidePrev">←</button>
+            <div class="slide-counter">
+                <span class="current-slide">01</span>
+                <span class="slide-divider">/</span>
+                <span class="total-slides">03</span>
+            </div>
+            <button class="slide-btn slide-next" id="slideNext">→</button>
+        </div>
+    </section>
+
+    <!-- About Teaser -->
+    <section class="about-teaser" id="work">
+        <div class="container-fluid">
+            <div class="about-grid">
+                <div class="about-image" data-reveal>
+                    <img src="https://images.unsplash.com/photo-1554048612-b6a482bc67e5?w=800&q=80" alt="Photographer">
+                    <div class="image-label">SINCE 2014</div>
+                </div>
+                <div class="about-content" data-reveal>
+                    <span class="section-number">01</span>
+                    <h2 class="section-title">Where Art Meets <br><em>Emotion</em></h2>
+                    <p class="lead-text">LensLuxe is more than a photography studio—we're visual storytellers crafting timeless narratives through our lens.</p>
+                    <p>Every photograph we create is a perfect blend of technical mastery and artistic vision. From intimate weddings to bold editorial shoots, we transform fleeting moments into eternal memories.</p>
+                    <a href="about-v2.html" class="btn-arrow">
+                        <span>LEARN MORE</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="5" y1="12" x2="19" y2="12"/>
+                            <polyline points="12 5 19 12 12 19"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="services-preview">
+        <div class="container-fluid">
+            <div class="section-header" data-reveal>
+                <span class="section-number">02</span>
+                <h2 class="section-title">Our <em>Specialties</em></h2>
+            </div>
+
+            <div class="services-masonry">
+                <div class="service-card service-large" data-reveal>
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=1920&q=80" alt="Wedding">
+                    </div>
+                    <div class="service-info">
+                        <h3>WEDDINGS</h3>
+                        <p>Your love story, beautifully documented from first look to last dance.</p>
+                        <span class="service-price">From $2,500</span>
+                    </div>
+                </div>
+
+                <div class="service-card" data-reveal>
+                    <div class="service-image">
+                        <img src="https://www.lookslikefilm.com/wp-content/uploads/2018/12/Alexa-Marquis-www.oakwoodphotovideo.com_.jpg" alt="Portraits">
+                    </div>
+                    <div class="service-info">
+                        <h3>PORTRAITS</h3>
+                        <p>Individual, family, and maternity sessions.</p>
+                        <span class="service-price">From $350</span>
+                    </div>
+                </div>
+
+                <div class="service-card" data-reveal>
+                    <div class="service-image">
+                        <img src="https://www.srisowbarnikaadecorator.com/wp-content/uploads/2023/01/10-Tips-for-Professional-Corporate-Event-Planning.jpg" alt="Corporate">
+                    </div>
+                    <div class="service-info">
+                        <h3>CORPORATE</h3>
+                        <p>Professional events and headshots.</p>
+                        <span class="service-price">From $800</span>
+                    </div>
+                </div>
+
+                <div class="service-card service-tall" data-reveal>
+                    <div class="service-image">
+                        <img src="https://i.mdel.net/i/db/2012/6/100999/100999-800w.jpg" alt="Editorial">
+                    </div>
+                    <div class="service-info">
+                        <h3>EDITORIAL</h3>
+                        <p>Fashion and lifestyle photography that tells a story.</p>
+                        <span class="service-price">From $1,200</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="services-cta" data-reveal>
+                <a href="services-v2.html" class="btn-primary">VIEW ALL SERVICES</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Showcase -->
+    <section class="portfolio-showcase">
+        <div class="container-fluid">
+            <div class="section-header" data-reveal>
+                <span class="section-number">03</span>
+                <h2 class="section-title">Recent <em>Work</em></h2>
+            </div>
+
+            <div class="portfolio-carousel" id="portfolioCarousel">
+                <div class="portfolio-track">
+                    <div class="portfolio-item">
+                        <img src="https://images.unsplash.com/photo-1606216794074-735e91aa2c92?w=900&q=80" alt="Portfolio 1">
+                        <div class="portfolio-info">
+                            <span class="portfolio-category">WEDDING</span>
+                            <h4>Sarah & Michael</h4>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="https://images.stockcake.com/public/9/6/d/96d4100c-ca71-4e09-b84e-d7e90c294a87_large/joyful-party-celebration-stockcake.jpg" alt="Portfolio 2">
+                        <div class="portfolio-info">
+                            <span class="portfolio-category">PARTIES</span>
+                            <h4>Emma & James</h4>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="https://janelkilnisan.com/wp-content/uploads/2024/01/staub-wachtler-family-session-7.jpg" alt="Portfolio 3">
+                        <div class="portfolio-info">
+                            <span class="portfolio-category">FAMILY</span>
+                            <h4>The Johnsons</h4>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="https://www.srisowbarnikaadecorator.com/wp-content/uploads/2023/01/10-Tips-for-Professional-Corporate-Event-Planning.jpg" alt="Portfolio 4">
+                        <div class="portfolio-info">
+                            <span class="portfolio-category">CORPORATE</span>
+                            <h4>Tech Summit</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-cta" data-reveal>
+                <a href="gallery-v2.html" class="btn-arrow">
+                    <span>VIEW FULL GALLERY</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="5" y1="12" x2="19" y2="12"/>
+                        <polyline points="12 5 19 12 12 19"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats">
+        <div class="container-fluid">
+            <div class="stats-grid">
+                <div class="stat-item" data-reveal>
+                    <div class="stat-number" data-count="500">0</div>
+                    <div class="stat-label">Weddings Captured</div>
+                </div>
+                <div class="stat-item" data-reveal>
+                    <div class="stat-number" data-count="2000">0</div>
+                    <div class="stat-label">Happy Clients</div>
+                </div>
+                <div class="stat-item" data-reveal>
+                    <div class="stat-number" data-count="15">0</div>
+                    <div class="stat-label">Awards Won</div>
+                </div>
+                <div class="stat-item" data-reveal>
+                    <div class="stat-number" data-count="10">0</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+        <div class="container-fluid">
+            <div class="cta-content" data-reveal>
+                <h2>Let's Create <br><em>Something Beautiful</em></h2>
+                <p>Book your photography session today and let us tell your story.</p>
+                <a href="contact-v2.html" class="btn-primary">GET IN TOUCH</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <span class="logo-symbol">◉</span>
+                        <span class="logo-text">LENSLUXE</span>
+                    </div>
+                    <p>Professional photography capturing life's most precious moments since 2014.</p>
+                    <div class="social-links">
+                        <a href="#">IN</a>
+                        <a href="#">FB</a>
+                        <a href="#">IG</a>
+                        <a href="#">PT</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>NAVIGATE</h4>
+                    <ul>
+                        <li><a href="index-v2.html">Home</a></li>
+                        <li><a href="about-v2.html">About</a></li>
+                        <li><a href="services-v2.html">Services</a></li>
+                        <li><a href="gallery-v2.html">Gallery</a></li>
+                        <li><a href="contact-v2.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>SERVICES</h4>
+                    <ul>
+                        <li><a href="services-v2.html#wedding">Wedding Photography</a></li>
+                        <li><a href="services-v2.html#portrait">Portrait Sessions</a></li>
+                        <li><a href="services-v2.html#corporate">Corporate Events</a></li>
+                        <li><a href="services-v2.html#editorial">Editorial Photography</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>CONTACT</h4>
+                    <ul class="contact-list">
+                        <li>info@lensluxe.com</li>
+                        <li>+1 (555) 123-4567</li>
+                        <li>123 Creative Avenue<br>New York, NY 10001</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 LensLuxe Photography. All Rights Reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script-v2.js"></script>
+</body>
+</html>

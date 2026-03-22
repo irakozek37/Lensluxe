@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - LensLuxe</title>
+    <link rel="stylesheet" href="styles-v2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:wght@300;400;600;700&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-left">
+            <div class="logo"><span class="logo-symbol">◉</span><span class="logo-text">LENSLUXE</span></div>
+        </div>
+        <div class="nav-center">
+            <a href="index-v2.html" class="nav-link">HOME</a>
+            <a href="about-v2.html" class="nav-link">ABOUT</a>
+            <a href="services-v2.html" class="nav-link">SERVICES</a>
+            <a href="gallery-v2.html" class="nav-link active">GALLERY</a>
+            <a href="contact-v2.html" class="nav-link">CONTACT</a>
+        </div>
+        <div class="nav-right">
+            <button class="theme-btn" id="themeBtn"><span class="theme-icon">☀</span></button>
+            <button class="burger" id="burger"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index-v2.html">HOME</a>
+        <a href="about-v2.html">ABOUT</a>
+        <a href="services-v2.html">SERVICES</a>
+        <a href="gallery-v2.html">GALLERY</a>
+        <a href="contact-v2.html">CONTACT</a>
+    </div>
+
+    <section class="gallery-filters">
+        <div class="container-fluid">
+            <h1 class="page-title" style="margin-bottom: 2rem;">Our <em>Work</em></h1>
+            <div class="filter-btns">
+                <button class="filter-btn active" data-filter="all">ALL</button>
+                <button class="filter-btn" data-filter="wedding">WEDDINGS</button>
+                <button class="filter-btn" data-filter="portrait">PORTRAITS</button>
+                <button class="filter-btn" data-filter="corporate">CORPORATE</button>
+                <button class="filter-btn" data-filter="editorial">EDITORIAL</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery-section">
+        <div class="container-fluid">
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="wedding">
+                    <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=700&q=80" alt="Wedding">
+                </div>
+                <div class="gallery-item" data-category="portrait">
+                    <img src="https://www.lookslikefilm.com/wp-content/uploads/2018/12/Alexa-Marquis-www.oakwoodphotovideo.com_.jpg" alt="Portrait">
+                </div>
+                <div class="gallery-item" data-category="corporate">
+                    <img src="https://www.srisowbarnikaadecorator.com/wp-content/uploads/2023/01/10-Tips-for-Professional-Corporate-Event-Planning.jpg" alt="Corporate">
+                </div>
+                <div class="gallery-item" data-category="portrait">
+                    <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=700&q=80" alt="Portrait">
+                </div>
+                <div class="gallery-item" data-category="wedding">
+                    <img src="https://images.unsplash.com/photo-1606216794074-735e91aa2c92?w=700&q=80" alt="Wedding">
+                </div>
+                <div class="gallery-item" data-category="editorial">
+                    <img src="https://images.unsplash.com/photo-1554048612-b6a482bc67e5?w=700&q=80" alt="Editorial">
+                </div>
+                <div class="gallery-item" data-category="wedding">
+                    <img src="https://images.unsplash.com/photo-1591604466107-ec97de577aff?w=700&q=80" alt="Wedding">
+                </div>
+                <div class="gallery-item" data-category="portrait">
+                    <img src="https://images.unsplash.com/photo-1530268729831-4b0b9e170218?w=700&q=80" alt="Portrait">
+                </div>
+                <div class="gallery-item" data-category="corporate">
+                    <img src="https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=700&q=80" alt="Corporate">
+                </div>
+                <div class="gallery-item" data-category="editorial">
+                    <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?w=700&q=80" alt="Editorial">
+                </div>
+                <div class="gallery-item" data-category="wedding">
+                    <img src="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?w=700&q=80" alt="Wedding">
+                </div>
+                <div class="gallery-item" data-category="portrait">
+                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=700&q=80" alt="Portrait">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose">×</button>
+        <button class="lightbox-prev" id="lightboxPrev">←</button>
+        <button class="lightbox-next" id="lightboxNext">→</button>
+        <img src="" alt="" id="lightboxImg">
+    </div>
+
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo"><span class="logo-symbol">◉</span><span class="logo-text">LENSLUXE</span></div>
+                    <p>Professional photography capturing life's most precious moments since 2014.</p>
+                    <div class="social-links"><a href="#">IN</a><a href="#">FB</a><a href="#">IG</a><a href="#">PT</a></div>
+                </div>
+                <div class="footer-col">
+                    <h4>NAVIGATE</h4>
+                    <ul><li><a href="index-v2.html">Home</a></li><li><a href="about-v2.html">About</a></li><li><a href="services-v2.html">Services</a></li><li><a href="gallery-v2.html">Gallery</a></li><li><a href="contact-v2.html">Contact</a></li></ul>
+                </div>
+                <div class="footer-col">
+                    <h4>SERVICES</h4>
+                    <ul><li><a href="services-v2.html">Wedding Photography</a></li><li><a href="services-v2.html">Portrait Sessions</a></li><li><a href="services-v2.html">Corporate Events</a></li><li><a href="services-v2.html">Editorial Photography</a></li></ul>
+                </div>
+                <div class="footer-col">
+                    <h4>CONTACT</h4>
+                    <ul class="contact-list"><li>info@lensluxe.com</li><li>+1 (555) 123-4567</li><li>123 Creative Avenue<br>New York, NY 10001</li></ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 LensLuxe Photography. All Rights Reserved.</p>
+                <div class="footer-links"><a href="#">Privacy</a><a href="#">Terms</a></div>
+            </div>
+        </div>
+    </footer>
+    <script src="script-v2.js"></script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - LensLuxe</title>
+    <link rel="stylesheet" href="styles-v2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:wght@300;400;600;700&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-left">
+            <div class="logo"><span class="logo-symbol">◉</span><span class="logo-text">LENSLUXE</span></div>
+        </div>
+        <div class="nav-center">
+            <a href="index-v2.html" class="nav-link">HOME</a>
+            <a href="about-v2.html" class="nav-link">ABOUT</a>
+            <a href="services-v2.html" class="nav-link">SERVICES</a>
+            <a href="gallery-v2.html" class="nav-link">GALLERY</a>
+            <a href="contact-v2.html" class="nav-link active">CONTACT</a>
+        </div>
+        <div class="nav-right">
+            <button class="theme-btn" id="themeBtn"><span class="theme-icon">☀</span></button>
+            <button class="burger" id="burger"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index-v2.html">HOME</a>
+        <a href="about-v2.html">ABOUT</a>
+        <a href="services-v2.html">SERVICES</a>
+        <a href="gallery-v2.html">GALLERY</a>
+        <a href="contact-v2.html">CONTACT</a>
+    </div>
+
+    <section class="contact-section">
+        <div class="container-fluid">
+            <div class="contact-grid">
+                <div class="contact-info" data-reveal>
+                    <span class="section-number">GET IN TOUCH</span>
+                    <h2>Let's Create <em>Together</em></h2>
+                    <p class="lead-text">Ready to book your session? We'd love to hear from you.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <h3>LOCATION</h3>
+                            <p>123 Creative Avenue<br>New York, NY 10001</p>
+                        </div>
+                        <div class="contact-item">
+                            <h3>PHONE</h3>
+                            <p>+1 (555) 123-4567<br>Mon-Fri: 9AM - 6PM</p>
+                        </div>
+                        <div class="contact-item">
+                            <h3>EMAIL</h3>
+                            <p>info@lensluxe.com<br>We respond within 24 hours</p>
+                        </div>
+                    </div>
+
+                    <div class="social-links" style="margin-top: 2rem;">
+                        <a href="#">IN</a><a href="#">FB</a><a href="#">IG</a><a href="#">PT</a>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper" data-reveal>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>FIRST NAME *</label>
+                                <input type="text" required>
+                                <span class="error-msg"></span>
+                            </div>
+                            <div class="form-group">
+                                <label>LAST NAME *</label>
+                                <input type="text" required>
+                                <span class="error-msg"></span>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>EMAIL *</label>
+                                <input type="email" required>
+                                <span class="error-msg"></span>
+                            </div>
+                            <div class="form-group">
+                                <label>PHONE *</label>
+                                <input type="tel" required>
+                                <span class="error-msg"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>SERVICE *</label>
+                            <select required>
+                                <option value="">Select a service</option>
+                                <option value="wedding">Wedding Photography</option>
+                                <option value="portrait">Portrait Session</option>
+                                <option value="corporate">Corporate Event</option>
+                                <option value="editorial">Editorial Photography</option>
+                            </select>
+                            <span class="error-msg"></span>
+                        </div>
+                        <div class="form-group">
+                            <label>MESSAGE *</label>
+                            <textarea rows="6" required></textarea>
+                            <span class="error-msg"></span>
+                        </div>
+                        <button type="submit" class="btn-primary">SEND MESSAGE</button>
+                    </form>
+                    <div id="formSuccess">
+                        <h3>MESSAGE SENT!</h3>
+                        <p>Thank you for contacting us. We'll get back to you within 24 hours.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo"><span class="logo-symbol">◉</span><span class="logo-text">LENSLUXE</span></div>
+                    <p>Professional photography capturing life's most precious moments since 2014.</p>
+                    <div class="social-links"><a href="#">IN</a><a href="#">FB</a><a href="#">IG</a><a href="#">PT</a></div>
+                </div>
+                <div class="footer-col">
+                    <h4>NAVIGATE</h4>
+                    <ul><li><a href="index-v2.html">Home</a></li><li><a href="about-v2.html">About</a></li><li><a href="services-v2.html">Services</a></li><li><a href="gallery-v2.html">Gallery</a></li><li><a href="contact-v2.html">Contact</a></li></ul>
+                </div>
+                <div class="footer-col">
+                    <h4>SERVICES</h4>
+                    <ul><li><a href="services-v2.html">Wedding Photography</a></li><li><a href="services-v2.html">Portrait Sessions</a></li><li><a href="services-v2.html">Corporate Events</a></li><li><a href="services-v2.html">Editorial Photography</a></li></ul>
+                </div>
+                <div class="footer-col">
+                    <h4>CONTACT</h4>
+                    <ul class="contact-list"><li>info@lensluxe.com</li><li>+1 (555) 123-4567</li><li>123 Creative Avenue<br>New York, NY 10001</li></ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 LensLuxe Photography. All Rights Reserved.</p>
+                <div class="footer-links"><a href="#">Privacy</a><a href="#">Terms</a></div>
+            </div>
+        </div>
+    </footer>
+    <script src="script-v2.js"></script>
+</body>
+</html>
